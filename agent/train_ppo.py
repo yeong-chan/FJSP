@@ -72,6 +72,7 @@ if __name__ == "__main__":
             s_prime, r, done = env.step(a)
             agent.put_data((s, a, r, s_prime, prob[a].item(), mask, done), done)
             r_epi += r
+            # 555
             if done:
                 break
             update_step += 1
